@@ -5,7 +5,7 @@ services:
     image: wahyupyan/apps-wahyu
     restart: always
     ports:
-      - "3000:3000"
+      - "5000:3000"
     volumes:
       - app-data:/app/public/images
 volumes:
