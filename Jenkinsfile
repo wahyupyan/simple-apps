@@ -52,7 +52,9 @@ pipeline {
         }
         stage('Deploy to Docker') {
             steps {
-                echo 'Deploy to Docker'
+                sh '''
+                docker compose up -d
+                '''
             }
         }
     }
