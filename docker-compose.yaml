@@ -1,0 +1,12 @@
+services:
+  backend:
+    container_name: ct-apps-wahyu
+    build: ./app
+    image: wahyupyan/apps-wahyu
+    restart: always
+    ports:
+      - "3000:3000"
+    volumes:
+      - app-data:/app/public/images
+volumes:
+  app-data: 
